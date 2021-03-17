@@ -3,6 +3,7 @@ import './Content.css'
 import{Switch, Route} from 'react-router-dom'
 import About from '../../views/samples/About'
 import Home from '../../views/samples/Home'
+import Param from '../../views/samples/Param'
 
 const Content = props => {
     return (
@@ -15,6 +16,16 @@ const Content = props => {
             <Switch>
                 <Route path="/">
                     <Home></Home>
+                </Route>
+            </Switch>
+            <Switch>
+                <Route path="/param/:id">
+                    <Param></Param>
+                </Route>
+            </Switch>
+            <Switch>
+                <Route path="/param">
+                    <Param></Param>
                 </Route>
             </Switch>
         </main>
