@@ -9,22 +9,22 @@ const Content = props => {
     return (
         <main className="Content">
             <Switch>
-                <Route path="/about">
+                <Route exact path="/">
+                    <Home></Home>
+                </Route>
+            </Switch>            
+            <Switch>
+                <Route exact path="/about">
                     <About></About>
                 </Route>
             </Switch>
             <Switch>
-                <Route path="/">
-                    <Home></Home>
-                </Route>
-            </Switch>
-            <Switch>
-                <Route path="/param/:id">
+                <Route exact path="/param/:id">
                     <Param></Param>
                 </Route>
             </Switch>
             <Switch>
-                <Route path="/param">
+                <Route exact path="/param">
                     <Param></Param>
                 </Route>
             </Switch>

@@ -19,7 +19,6 @@ const Menu = props => {
                     <li>
                         <Link to="/param">Param #2</Link>
                     </li>                              
-
                 </ul>
             </nav>
         </aside>
